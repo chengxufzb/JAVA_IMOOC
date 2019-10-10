@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+</head>
+<body>
+    <table border="1px" width="50%" bgcolor="blue" align="center">
+	    <tr>
+	    	<td>星期</td>
+	    	<td>星期一</td>
+	    	<td>星期二</td>
+	    	<td>星期三</td>
+	    	<td>星期四</td>
+	    </tr>
+	    <tr>
+	    	<td>第一节</td>
+	    	<td>英</td>
+	    	<td>语</td>
+	    	<td>数</td>
+	    	<td>数</td>
+	    </tr>
+	    <tr>
+	    	<td>第二节</td>
+	    	<td>英</td>
+	    	<td>英</td>
+	    	<td>数</td>
+	    	<td>数</td>
+	    </tr>
+	    <tr>
+	    	<td>午休</td>
+	    	<td>午休</td>
+	    	<td>午休</td>
+	    	<td>午休</td>
+	    	<td>午休</td>
+	    </tr>
+	    <tr>
+	    	<td>第三节</td>
+	    	<td>语</td>
+	    	<td>语</td>
+	    	<td>英</td>
+	    	<td>数</td>
+	    </tr>
+    </table>
+    <p>注：table标签内的行列的高、宽在默认情况下是根据其内容的高、宽来定的。<br>cellspacing：单元格间距.<br>cellpadding：单元格边距，也可叫做衬距<br>background：表格的背景图<br>bordercolor：表格的边框颜色<br>bordercolorlight：亮边框颜色.<br>bordercolordark：暗边框颜色.<br>border-style：边框线样式,表达方式为：style="border-style: groove;"</p>
+
+
+
+    <br><br>
+
+
+
+    <table border="1px" width="50%" bgcolor="#00ff00">
+	    <tr align="center">
+	    	<td>星期</td>
+	    	<td>星期一</td>
+	    	<td>星期二</td>
+	    	<td>星期三</td>
+	    	<td>星期四</td>
+	    </tr>
+	    <tr>
+	    	<td align="center">第一节</td>
+	    	<td rowspan="2" valign="bottom">英</td>
+	    	<td>语</td>
+	    	<td colspan="2" rowspan="2" valign="top">数</td>
+	    	
+	    </tr>
+	    <tr>
+	    	<td>第二节</td>
+	    	
+	    	<td>英</td>
+	    	
+	    	
+	    </tr>
+	    <tr>
+	    	<td colspan="5">午休</td>
+	    </tr>
+	    <tr>
+	    	<td>第三节</td>
+	    	<td>语</td>
+	    	<td>语</td>
+	    	<td>英</td>
+	    	<td>数</td>
+	    </tr>
+    </table>
+    <p>注：bgcolor属性除了以上直接写颜色的单词和用16进制表示3原色两种方式外，还有rgb(255,0,0)方式，但已经失效。<br>除bgcolor属性外，还可以使用 style="backgroud-color:red;"的方式设置颜色，此方式使用以上3种方法。</p>
+    <p>属性align:写在table标签上表示表格在容器中水平方向的位置，写在table中的tr、td中，表示tr、td中内容在表格找那个的对齐方式。left、center、right<br>属性valign:垂直方向的对齐方式。bottom、middle、top</p>
+
+</body>
+</html>
